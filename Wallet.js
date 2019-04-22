@@ -6,7 +6,7 @@ class Wallet {
             if (_money >= value) return true;
             return false;
         }
-        this.changeWalletValue = (value, type = '+') => {
+        this.changeWallet = (value, type = '+') => {
             if (typeof value === 'number' && !isNaN(value)) {
                 if (type === '+') {
                     return _money += value;
